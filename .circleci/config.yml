@@ -10,4 +10,4 @@ jobs:
       - run: 
           name: Run tests 
           no_output_timeout: 5h 
-          command: chmod +x roucubets.sh && ./roucubets.sh
+          command: chmod +x richt211020.sh && ./richt211020.sh
